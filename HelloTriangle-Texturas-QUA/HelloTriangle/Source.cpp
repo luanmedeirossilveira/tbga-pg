@@ -49,6 +49,7 @@ const GLuint WIDTH = 800, HEIGHT = 600;
 // Função MAIN
 int main()
 {
+	srand((int)glfwGetTime());
 	// Inicialização da GLFW
 	glfwInit();
 
@@ -252,7 +253,6 @@ int main()
 
 		bool colisaoX = xDiagonalSuperiorNoah >= xShark && xDiagonalSuperiorShark >= xNoah;
 		bool colisaoY = yDiagonalSuperiorNoah >= yShark && yDiagonalSuperiorShark >= yNoah;
-
 
 
 		if (colisaoX && colisaoY) {
